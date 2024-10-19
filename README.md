@@ -2,6 +2,12 @@
 
 The Library Management System is a command-line application that provides a user-friendly interface for managing books, users, and authors in a library setting. The system allows users to perform various operations related to library management efficiently.
 
+- Features
+
+**Book Operations**: Add, borrow, return, and search for books.
+**User Operations**: Manage library users, including registration and user-specific functions.
+**Author Operations**: Add new authors and view their details.
+
 
 ## Book Operations: Add, borrow, return, and search for books.
 Book Operations is designed to manage a collection of books in a library. It provides functionalities for adding, borrowing, returning, searching, reserving books, and displaying the entire library catalog.
