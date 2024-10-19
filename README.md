@@ -24,7 +24,7 @@ The User Operations is the part of the Library Management System designed to man
 **View User Details**: Retrieve and display details for a specific user using their library ID.
 **Display All Users**: View all registered users in the system.
 
-**Author Operations**: Add new authors and view their details.
+- **Author Operations**: Add new authors and view their details.
 The Author Management System is a component of the Library Management System, designed to manage authors effectively. It allows you to add new authors, view author details, and display all authors in the library database.
 
 ## Features
