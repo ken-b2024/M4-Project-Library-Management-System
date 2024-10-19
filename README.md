@@ -6,7 +6,7 @@ The Library Management System is a command-line application that provides a user
 ## Book Operations: Add, borrow, return, and search for books.
 Book Operations is designed to manage a collection of books in a library. It provides functionalities for adding, borrowing, returning, searching, reserving books, and displaying the entire library catalog.
 
-- ** Features
+-  Features
 
 **Add a New Book**: Input details for a new book, including title, author, genre, and ISBN.
 **Borrow a Book**: Mark a book as borrowed, making it unavailable for other users.
@@ -18,7 +18,7 @@ Book Operations is designed to manage a collection of books in a library. It pro
 ## User Operations: Manage library users, including registration and user-specific functions.
 The User Operations is the part of the Library Management System designed to manage user accounts effectively. It allows you to add new users, view user details, and display all users in the library.
 
--** Features
+-  Features
 
 **Add a New User**: Create a new user account by entering the user's first name, last name, library ID, and birthdate.
 **View User Details**: Retrieve and display details for a specific user using their library ID.
@@ -27,7 +27,7 @@ The User Operations is the part of the Library Management System designed to man
 ## Author Operations: Add new authors and view their details.
 The Author Management System is a component of the Library Management System, designed to manage authors effectively. It allows you to add new authors, view author details, and display all authors in the library database.
 
--** Features
+-  Features
 
 **Add a New Author**: Create a new author record by entering their name, last four digits of their International Standard Name Identifier (ISNI), and a biography.
 **View Author Details**: Retrieve and display details for a specific author using their ISNI.
