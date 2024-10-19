@@ -78,11 +78,11 @@ class Book:
     @staticmethod
     def return_book(ISBN):
         ISBN = input("Please enter the first four numbers of the ISBN: ")
-        if ISBN in library_dict:
+        if library_dict[ISBN]['Status'] == 'Available':
+            print("\nThis book is already in stock.")
+        elif ISBN in library_dict:
             library_dict[ISBN]['Status'] = 'Available'
             print(f"\n{library_dict[ISBN]['Title']} has been marked as {library_dict[ISBN]['Status']}")
-        elif library_dict[ISBN]['Status'] == 'Available':
-            print("\nThis book is already in stock.")
         else:
             print("\nISBN is invalid. Try again...")
 
@@ -95,7 +95,7 @@ class Book:
             print("\nISBN does not exist. Try again...")
 
     @staticmethod
-    def reserve_book(ISBN):
+    def reserve_book(ISBN, lib_id):
         ISBN = input("Please enter the first four numbers of the ISBN: ")
         # print(library_dict)
         if ISBN in library_dict.keys():
@@ -155,7 +155,7 @@ while True:
         elif book_menu_action == 4:
             Book.search_for_book('ISBN')
         elif book_menu_action == 5:
-            Book.reserve_book('ISBN')
+            Book.reserve_book('ISBN','lib_id')
         elif book_menu_action == 6:
             Book.display_book()
         elif book_menu_action == 7:
