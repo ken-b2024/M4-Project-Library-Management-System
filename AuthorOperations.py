@@ -21,6 +21,7 @@ class Author:
         print("\nAuthor Operations\n")
         print("Menu", *author_menu, sep='\n')
 
+    @staticmethod
     def add_author(self,ISNI):
         author_name = input("Enter the name of the author: ")
         for pattern in ISNI:
@@ -40,7 +41,7 @@ class Author:
         print("Author:", author_dict, sep='\n')
         print("\nAuthor has been succesfully added")
 
-
+    @staticmethod
     def view_author(ISNI):
         for i in ISNI:
             ISNI = input("Enter the last four of the author's ISNI: ")
@@ -51,6 +52,7 @@ class Author:
             else:
                 print("\nInvalid ISNI. Try again...")
 
+    @staticmethod
     def display_authors():
         print("\nFetching author database...\n")
         print("Authors:", author_dict, sep='\n')
