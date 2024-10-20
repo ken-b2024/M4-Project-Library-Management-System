@@ -66,7 +66,7 @@ class Book:
         ISBN = input("Please enter the first four numbers of the ISBN: ")
         if ISBN in library_dict:
             print("\nBook Info:", library_dict[ISBN], sep="\n")
-            borrow_action = input("Do you want to borrow this book (y/n): ")
+            borrow_action = input("\nDo you want to borrow this book (y/n): ")
             if borrow_action == 'y':
                 library_dict[ISBN]['Status'] = 'Unavailable'
                 print(f"\n{library_dict[ISBN]['Title']} has been marked as {library_dict[ISBN]['Status']} ")
@@ -102,10 +102,10 @@ class Book:
             # print("Hello")
             if library_dict[ISBN]['Status'] == 'Unavailable':
                 print("\nThis book is not available at this time.")
-                user_action = input("Would you like to reserve it once it is returned? (y/n): ")
+                user_action = input("\nWould you like to reserve it once it is returned? (y/n): ")
                 if user_action == 'y':
                     for pattern in lib_id:
-                        lib_id = int(input("Please enter your library ID: "))
+                        lib_id = input("Please enter your library ID: ")
                         pattern = (r"\d{5}")
                         if re.search(pattern,lib_id):
                             library_dict[ISBN]['Status'] =  f'Reserved for Library ID: {lib_id}'
@@ -117,7 +117,7 @@ class Book:
                     print("\nReturning to menu...")
             elif library_dict[ISBN]['Status'] == 'Available':
                 print("\nThis book is available!")
-                user_action = input("Would you like to reserve it? (y/n): ")
+                user_action = input("\nWould you like to reserve it? (y/n): ")
                 if user_action == 'y':
                     for pattern in lib_id:
                         lib_id = input("Please enter your library ID: ")
