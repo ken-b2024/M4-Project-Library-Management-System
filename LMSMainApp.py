@@ -15,11 +15,11 @@ while True:
         try:
             menu_selection = int(input("\nSelect Menu Item (1-4): "))
             if menu_selection == 1:
-                import BookOperations
+                from BookOperations import Book
             if menu_selection == 2:
-                import UserOperations
+                from UserOperations import User
             if menu_selection == 3:
-                import AuthorOperations
+                from AuthorOperations import Author
             if menu_selection == 4:
                 print("\nThank you for using the Library Management System!\n")
                 break

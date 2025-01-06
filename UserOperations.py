@@ -58,8 +58,11 @@ class User:
             print("\nID number is invalid. Try again...")
 
     def display_users(self):
-        print("\nFetching users...")
-        print("\nUsers:", user_dict, sep='\n')
+        if user_dict:
+            print("\nFetching users...")
+            print("\nUsers:", user_dict, sep='\n')
+        else:
+            print("\nThere are no contacts to display. Returning to main menu...")
 
 while True:
     User.UserOpsMenu()
